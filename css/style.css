@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body, html{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color:white;
+    background-color: rgb(44, 59, 71);
+}
+a{
+    text-decoration: none;
+}
+.grid {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "head head head head head"
+    "nav art art art ads"
+    "nav art art art ads"
+    "nav art art art ads"
+    "foot foot foot foot foot";
+}
+.head { grid-area: head; }
+.art { grid-area: art; }
+.ads { grid-area: ads; }
+.nav { grid-area: nav; }
+.foot { grid-area: foot; }
+nav{
+    background:linear-gradient(45deg, rgb(87, 82, 82), rgb(45, 41, 56));
+    margin-left:10px;
+    margin-right:10px;
+    border-radius: 10px;
+    padding:25px;
+}
+aside{
+    background-color: black;
+    margin-left:12px;
+    margin-right:12px;
+    border-radius: 10px;
+    padding:10px
+}
+header{
+    text-align: center;
+    margin:auto;
+}
+article{
+    padding:10px;
+    background-color:slategray;
+    margin-left:10px;
+    margin-right:10px;
+    border-radius: 10px;
+    text-align: justify;
+}
+article div:last-of-type p, article h3:last-of-type{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin:auto;
+}
+footer>*{
+    margin: 0;
+    padding: 0;
+}
+aside img{
+    width: 100%;
+}
+.alg{
+    text-align: center;
+}
+.alg div:first-of-type{
+    width: 50%;
+    float:left;
+}
+.alg div>img{
+    width: 45%;
+}
+.alg div:last-of-type{
+    float:right;
+    width: 50%;
+}
+.alg div:first-of-type img{
+    transition:width 0.3s;
+}
+.alg div:first-of-type img:hover{
+    width: 60%;
+}
+.alg div:last-of-type img{
+    transition:width 0.3s;
+}
+.alg div:last-of-type img:hover{
+    width: 60%;
+}
+a{
+    color:aliceblue;
+}
